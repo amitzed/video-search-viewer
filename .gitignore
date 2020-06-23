@@ -24,6 +24,4 @@ yarn-error.log*
 <<<<<<< HEAD
 
 # api keys
-/.env
-=======
->>>>>>> parent of ed00000... Create .env file to store api key and call it from App
+.env
