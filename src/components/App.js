@@ -1,6 +1,7 @@
 import React from 'react';
 
 import youtube from '../apis/youtube.js';
+import Search from './Search';
 
 const KEY = process.env.REACT_APP_YOUTUBE_API_KEY
 
@@ -19,7 +20,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        App
+        <Search onFormSubmit={this.onTextSubmit} />
       </div>
     );
   }
