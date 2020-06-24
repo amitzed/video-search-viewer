@@ -5,7 +5,7 @@ class Search extends React.Component {
 
   onFormSubmit = (event) => {
     event.preventDefault();
- 
+
     this.props.onFormSubmit(this.state.term);
   }
 
@@ -17,10 +17,11 @@ class Search extends React.Component {
     return (
       <div>
         <form onSubmit={this.onFormSubmit}>
-          <div>
-            <label>Search Videos</label>
+          <div className="input-group input-group-lg">
             <input
+              className="form-control"
               type="text"
+              placeholder="&#128269; &nbsp; Search Videos"
               value={this.state.term}
               onChange={this.onInputChange}
             />
