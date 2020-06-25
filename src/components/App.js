@@ -4,6 +4,7 @@ import $ from 'jquery';
 import '../style.scss';
 import youtube from '../apis/youtube.js';
 import Search from './Search';
+import List from './List';
 
 const KEY = process.env.REACT_APP_YOUTUBE_API_KEY
 
@@ -48,7 +49,7 @@ class App extends React.Component {
         </div>
         <i className="fa fa-youtube-play fa-4x">Video Goes Here</i>
         <Search onFormSubmit={this.onTextSubmit} />
-        <h4>Your search has fetched {this.state.videos.length} videos</h4>
+        <List videos={this.state.videos} />
       </div>
     );
   }
