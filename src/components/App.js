@@ -8,6 +8,8 @@ import Search from './Search';
 const KEY = process.env.REACT_APP_YOUTUBE_API_KEY
 
 class App extends React.Component {
+  state = { videos: [] };
+
   componentDidMount() {
     $('input').on({
       focus: function() {
@@ -24,8 +26,8 @@ class App extends React.Component {
     });
   }
 
-  onTextSubmit = (term) => {
-    youtube.get("/search", {
+  onTextSubmit = async (term) => {
+    const response = await youtube.get("/search", {
       params: {
         q: term,
         part: "snippet",
@@ -33,6 +35,7 @@ class App extends React.Component {
         key: KEY
       }
     });
+    this.setState({videos: response.data.items});
   }
 
   render() {
@@ -45,6 +48,7 @@ class App extends React.Component {
         </div>
         <i className="fa fa-youtube-play fa-4x">Video Goes Here</i>
         <Search onFormSubmit={this.onTextSubmit} />
+        <h4>Your search has fetched {this.state.videos.length} videos</h4>
       </div>
     );
   }
