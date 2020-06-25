@@ -1,9 +1,9 @@
 import React from 'react';
 
-const List = (props) => {
+const List = ( {videos} ) => {
   return (
     <div>
-      {props.videos.length}
+      {videos.length}
     </div>
   )
 }
