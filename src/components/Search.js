@@ -15,11 +15,11 @@ class Search extends React.Component {
 
   render() {
     return (
-      <div>
+      <div data-aos="fade-up">
         <form onSubmit={this.onFormSubmit}>
           <div className="input-group input-group-lg">
             <input
-              className="form-control"
+              className="form-control test"
               type="text"
               placeholder="&#128269; &nbsp; Search Videos"
               value={this.state.term}

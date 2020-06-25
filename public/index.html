@@ -44,7 +44,13 @@
     -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init();
+      AOS.init({
+        easing: 'ease-out-back',
+        duration: 800,
+        delay: 300,
+        once: true,
+        disable: 'mobile'
+      });
     </script>
   </body>
 </html>
