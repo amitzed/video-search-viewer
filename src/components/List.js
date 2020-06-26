@@ -4,7 +4,7 @@ import Item from './Item';
 
 const List = ( {videos} ) => {
   const renderedList = videos.map( (video) => {
-    return <Item />
+    return <Item video={video} />
   });
 
   return (

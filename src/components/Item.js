@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Item = () => {
+const Item = ( {video} ) => {
   return (
-    <div>Item</div>
+    <div>{video.snippet.title}</div>
   )
 }
 

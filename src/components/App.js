@@ -35,7 +35,7 @@ class App extends React.Component {
       params: {
         q: term,
         part: "snippet",
-        maxResults: 50,
+        maxResults: 20,
         key: KEY
       }
     });
