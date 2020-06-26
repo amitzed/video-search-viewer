@@ -12,7 +12,7 @@ import { Header } from './partials/Header';
 const KEY = process.env.REACT_APP_YOUTUBE_API_KEY
 
 class App extends React.Component {
-  state = { videos: [] };
+  state = { videos: [], selectedVudeo: null };
 
   componentDidMount() {
     $('input').on({
@@ -42,12 +42,16 @@ class App extends React.Component {
     this.setState({videos: response.data.items});
   }
 
+  onVideoSelect = (video) => {
+    console.log(video);
+  }
+
   render() {
     return (
       <div className="container-lg my-2">
         <Header />
         <i className="fa fa-youtube-play fa-4x">Video Goes Here</i>
-        <List videos={this.state.videos} />
+        <List onVideoSelect={this.onVideoSelect} videos={this.state.videos} />
         <Search onFormSubmit={this.onTextSubmit} />
       </div>
     );

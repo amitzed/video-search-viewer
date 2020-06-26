@@ -19,7 +19,10 @@
   }
 
   img {
+    max-width: 15em;
+    max-height: 10em;
     border-radius: 2%;
+    text-align: center;
     -webkit-transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;
     -o-transition: all 0.35s ease-in-out;
