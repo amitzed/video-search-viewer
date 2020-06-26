@@ -35,7 +35,7 @@ class App extends React.Component {
       params: {
         q: term,
         part: "snippet",
-        maxResults: 20,
+        maxResults: 7,
         key: KEY
       }
     });
@@ -47,8 +47,8 @@ class App extends React.Component {
       <div className="container-lg my-2">
         <Header />
         <i className="fa fa-youtube-play fa-4x">Video Goes Here</i>
-        <Search onFormSubmit={this.onTextSubmit} />
         <List videos={this.state.videos} />
+        <Search onFormSubmit={this.onTextSubmit} />
       </div>
     );
   }

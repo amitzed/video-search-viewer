@@ -8,7 +8,7 @@ const List = ( {videos} ) => {
   });
 
   return (
-    <div>
+    <div className="card mb-3">
       {renderedList}
     </div>
   )

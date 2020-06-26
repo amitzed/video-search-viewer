@@ -2,9 +2,15 @@ import React from 'react';
 
 const Item = ( {video} ) => {
   return (
-    <div>
-      {video.snippet.title}
-      <img src={video.snippet.thumbnails.medium.url} />
+    <div className="item-component row no-gutters">
+      <div className="col-md-8">
+        <div className="card-body">
+          <h5 className="card-title">{video.snippet.title}</h5>
+        </div>
+      </div>
+      <div className="col-md-4">
+        <img src={video.snippet.thumbnails.medium.url} />
+      </div>
     </div>
   )
 }
