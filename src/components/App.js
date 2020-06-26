@@ -1,10 +1,13 @@
 import React from 'react';
 import $ from 'jquery';
-
-import '../style.scss';
+/* Styles */
+import '../styles/main.scss';
+/* Pages */
 import youtube from '../apis/youtube.js';
 import Search from './Search';
 import List from './List';
+/* Partials */
+import { Header } from './partials/Header';
 
 const KEY = process.env.REACT_APP_YOUTUBE_API_KEY
 
@@ -42,11 +45,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="container-lg my-2">
-        <div className="jumbotron jumbotron-fluid">
-          <div className="container">
-            <h1 className="display-4" style={{textAlign: 'center'}}>App Name Placeholder</h1>
-          </div>
-        </div>
+        <Header />
         <i className="fa fa-youtube-play fa-4x">Video Goes Here</i>
         <Search onFormSubmit={this.onTextSubmit} />
         <List videos={this.state.videos} />
