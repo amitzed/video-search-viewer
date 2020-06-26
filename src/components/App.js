@@ -6,6 +6,7 @@ import '../styles/main.scss';
 import youtube from '../apis/youtube.js';
 import Search from './Search';
 import List from './List';
+import VideoFocus from './VideoFocus';
 /* Partials */
 import { Header } from './partials/Header';
 
@@ -51,8 +52,9 @@ class App extends React.Component {
       <div className="container-lg my-2">
         <Header />
         <i className="fa fa-youtube-play fa-4x">Video Goes Here</i>
-        <List onVideoSelect={this.onVideoSelect} videos={this.state.videos} />
+        <VideoFocus video={this.state.selectedVideo} />
         <Search onFormSubmit={this.onTextSubmit} />
+        <List onVideoSelect={this.onVideoSelect} videos={this.state.videos} />
       </div>
     );
   }
