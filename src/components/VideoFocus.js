@@ -1,6 +1,6 @@
 import React from 'react';
 
-const VideoFocus = (props) => {
+const VideoFocus = ( {video}) => {
   return (
     <div>{video.snippet.title}</div>
   )
