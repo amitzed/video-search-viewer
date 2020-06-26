@@ -12,7 +12,7 @@ import { Header } from './partials/Header';
 const KEY = process.env.REACT_APP_YOUTUBE_API_KEY
 
 class App extends React.Component {
-  state = { videos: [], selectedVudeo: null };
+  state = { videos: [], selectedVideo: null };
 
   componentDidMount() {
     $('input').on({
@@ -43,7 +43,7 @@ class App extends React.Component {
   }
 
   onVideoSelect = (video) => {
-    console.log(video);
+    this.setState({ selectedVideo: video })
   }
 
   render() {
