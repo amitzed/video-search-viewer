@@ -19,7 +19,7 @@ class Search extends React.Component {
         <form onSubmit={this.onFormSubmit}>
           <div className="input-group input-group-lg">
             <input
-              className="form-control test"
+              className="form-control"
               type="text"
               placeholder="&#128269; &nbsp; Search Videos"
               value={this.state.term}
