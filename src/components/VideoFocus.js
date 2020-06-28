@@ -9,6 +9,8 @@ const VideoFocus = ( {video}) => {
     )
   }
 
+  // const videoSource = 'https://www.youtube.com/embed/'
+
   return (
     <div className="card">
       <img src="https://tbivision.com/files/2020/05/TikTok.png" className="card-img-top" alt="An Image" />
