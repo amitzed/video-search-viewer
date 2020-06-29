@@ -9,7 +9,7 @@ const VideoFocus = ( {video}) => {
     )
   }
 
-  // const videoSource = 'https://www.youtube.com/embed/'
+  const videoSource = `https://www.youtube.com/embed/${video.id.videoId}`;
 
   return (
     <div className="card">
