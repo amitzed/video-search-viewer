@@ -9,7 +9,7 @@ const Item = ( {video, onVideoSelect} ) => {
         </div>
       </div>
       <div className="col-md-4">
-        <img src={video.snippet.thumbnails.medium.url} />
+        <img src={video.snippet.thumbnails.medium.url} alt={video.snippet.title} />
       </div>
     </div>
   )

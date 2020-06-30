@@ -14,7 +14,7 @@ const VideoFocus = ( {video}) => {
   return (
     <div className="card">
       <div className="card-img-top">
-        <iframe src={videoSource} />
+        <iframe src={videoSource} title="Video Player" />
       </div>
       <div className="card-body">
         <h5 className="card-title">{video.snippet.title}</h5>
