@@ -16,6 +16,8 @@ class App extends React.Component {
   state = { videos: [], selectedVideo: null };
 
   componentDidMount() {
+    this.onTextSubmit('two fists by modern wolf');
+
     $('input').on({
       focus: function() {
         $(this).css({
@@ -41,7 +43,10 @@ class App extends React.Component {
         key: KEY
       }
     });
-    this.setState({videos: response.data.items});
+    this.setState({
+      videos: response.data.items,
+      selectedVideo: response.data.items[0]
+    });
   }
 
   onVideoSelect = (video) => {
@@ -53,9 +58,14 @@ class App extends React.Component {
       <div className="container-lg my-2">
         <Header />
         <i className="fa fa-youtube-play fa-4x">Video Goes Here</i>
-        <VideoFocus video={this.state.selectedVideo} />
+        <VideoFocus video={this.state.selectedVideo} className="" />
         <Search onFormSubmit={this.onTextSubmit} />
-        <List onVideoSelect={this.onVideoSelect} videos={this.state.videos} />
+
+        <div className="row">
+          <div className="col-xl">
+            <List onVideoSelect={this.onVideoSelect} videos={this.state.videos} />
+          </div>
+        </div>
       </div>
     );
   }
