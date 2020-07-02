@@ -55,15 +55,15 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="container-lg my-2">
+      <div className="container-lg my-2 app-container">
         <Header />
-        <i className="fa fa-youtube-play fa-4x">Video Goes Here</i>
-        <VideoFocus video={this.state.selectedVideo} className="" />
-        <Search onFormSubmit={this.onTextSubmit} />
-
-        <div className="row">
-          <div className="col-xl">
+        <div className="ui grid">
+          <div className="six wide column list-container">
             <List onVideoSelect={this.onVideoSelect} videos={this.state.videos} />
+          </div>
+          <div className="ten wide column">
+            <Search onFormSubmit={this.onTextSubmit} />
+            <VideoFocus video={this.state.selectedVideo} className="" />
           </div>
         </div>
       </div>

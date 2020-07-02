@@ -15,7 +15,7 @@ class Search extends React.Component {
 
   render() {
     return (
-      <div className="search-bar" data-aos="fade-up">
+      <div className="search-bar" data-aos="fade-down">
         <form onSubmit={this.onFormSubmit}>
           <div className="input-group input-group-lg">
             <input

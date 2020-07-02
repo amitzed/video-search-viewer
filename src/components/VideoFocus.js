@@ -12,13 +12,14 @@ const VideoFocus = ( {video}) => {
   const videoSource = `https://www.youtube.com/embed/${video.id.videoId}`;
 
   return (
-    <div className="card">
-      <div className="card-img-top">
-        <iframe src={videoSource} title="Video Player" />
+    <div className="jumbotron" data-aos="fade-up">
+      <div className="lead">
+        <h4 className="">{video.snippet.title}</h4>
+        <h6 className="">{video.snippet.description}</h6>
       </div>
-      <div className="card-body">
-        <h5 className="card-title">{video.snippet.title}</h5>
-        <p className="card-text">{video.snippet.description}</p>
+      <hr className="my-3" />
+      <div className="embed-responsive embed-responsive-16by9">
+        <iframe className="embed-responsive-item" src={videoSource} title="Video Player" />
       </div>
     </div>
   )
