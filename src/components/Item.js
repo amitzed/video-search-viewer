@@ -8,6 +8,7 @@ const Item = ( {video, onVideoSelect} ) => {
           <h5 className="card-title">{video.snippet.title}</h5>
         </div>
       </div>
+      <hr className="mx-3" />
       <div className="col-md-4">
         <img src={video.snippet.thumbnails.medium.url} alt={video.snippet.title} />
       </div>

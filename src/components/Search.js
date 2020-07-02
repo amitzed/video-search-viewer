@@ -21,7 +21,7 @@ class Search extends React.Component {
             <input
               className="form-control"
               type="text"
-              placeholder="&#128269; &nbsp; Search Videos"
+              placeholder="&#128269; &nbsp;"
               value={this.state.term}
               onChange={this.onInputChange}
             />

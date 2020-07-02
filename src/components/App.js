@@ -21,7 +21,7 @@ class App extends React.Component {
     $('input').on({
       focus: function() {
         $(this).css({
-          background: 'whitesmoke',
+          background: '#FFF685',
           color: 'royalblue'
         })
       },
@@ -59,11 +59,11 @@ class App extends React.Component {
         <Header />
         <div className="ui grid">
           <div className="six wide column list-container">
+            <Search onFormSubmit={this.onTextSubmit} />
             <List onVideoSelect={this.onVideoSelect} videos={this.state.videos} />
           </div>
           <div className="ten wide column">
-            <Search onFormSubmit={this.onTextSubmit} />
-            <VideoFocus video={this.state.selectedVideo} className="" />
+            <VideoFocus video={this.state.selectedVideo} />
           </div>
         </div>
       </div>
