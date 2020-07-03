@@ -11,6 +11,8 @@ html {
 
 body {
   background: $blueDeep;
-  background-size: cover;
-  background: linear-gradient(to bottom, $magenta 0,  $mauve 15%, $yellowPastel 15%, $blueCool 85%, $blueDeep 85%);
+  background: repeating-linear-gradient(-45deg, transparent 0, transparent 25%, $blueDeep 0, $blueDeep 50%),
+              repeating-linear-gradient(45deg, transparent 0, transparent 25%, $mauve 0, $mauve 50%),
+              repeating-linear-gradient(transparent 0, transparent 25%, $yellowPastel 0, $yellowPastel 50%), white;
+  background-blend-mode: multiply;
 }

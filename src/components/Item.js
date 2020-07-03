@@ -2,7 +2,7 @@ import React from 'react';
 
 const Item = ( {video, onVideoSelect} ) => {
   return (
-    <div className="content item-component" data-aos="fade-up" data-aos-anchor-placement="top-bottom" onClick={() => onVideoSelect(video)}>
+    <div className="content item-component" onClick={() => onVideoSelect(video)}>
       <div className="">
         <div className="card-body">
           <h5 className="card-title">{video.snippet.title}</h5>

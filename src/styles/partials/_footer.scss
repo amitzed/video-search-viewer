@@ -1,0 +1,23 @@
+.footer-container {
+  height: 22.25em;
+  border-radius: 5px;
+
+  .bottom-row-buttons {
+    margin-top: 2.5em;
+  }
+
+  a {
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+
+    &:hover {
+      background: $blueDeep !important;
+      -webkit-transform: scale(1.15);
+      -moz-transform: scale(1.15);
+      -o-transform: scale(1.15);
+      transform: scale(1.15)
+    }
+  }
+}

@@ -9,6 +9,7 @@ import List from './List';
 import VideoFocus from './VideoFocus';
 /* Partials */
 import { Header } from './partials/Header';
+import { Footer } from './partials/Footer';
 
 const KEY = process.env.REACT_APP_YOUTUBE_API_KEY
 
@@ -38,7 +39,7 @@ class App extends React.Component {
       params: {
         q: term,
         part: "snippet",
-        maxResults: 7,
+        maxResults: 50,
         type: 'video',
         key: KEY
       }
@@ -57,13 +58,14 @@ class App extends React.Component {
     return (
       <div className="container-lg my-2 app-container">
         <Header />
-        <div className="ui grid">
+        <div className="ui grid app-inner">
           <div className="six wide column list-container">
             <Search onFormSubmit={this.onTextSubmit} />
             <List onVideoSelect={this.onVideoSelect} videos={this.state.videos} />
           </div>
           <div className="ten wide column">
             <VideoFocus video={this.state.selectedVideo} />
+            <Footer />
           </div>
         </div>
       </div>
