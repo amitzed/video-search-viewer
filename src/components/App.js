@@ -9,6 +9,7 @@ import List from './List';
 import VideoFocus from './VideoFocus';
 /* Partials */
 import { Header } from './partials/Header';
+import { Links } from './partials/Links';
 import { Footer } from './partials/Footer';
 
 const KEY = process.env.REACT_APP_YOUTUBE_API_KEY
@@ -39,7 +40,7 @@ class App extends React.Component {
       params: {
         q: term,
         part: "snippet",
-        maxResults: 50,
+        maxResults: 5,
         type: 'video',
         key: KEY
       }
@@ -65,9 +66,10 @@ class App extends React.Component {
           </div>
           <div className="ten wide column">
             <VideoFocus video={this.state.selectedVideo} />
-            <Footer />
+            <Links />
           </div>
         </div>
+        <Footer />
       </div>
     );
   }

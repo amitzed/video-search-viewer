@@ -21,7 +21,7 @@ class Search extends React.Component {
             <input
               className="form-control"
               type="text"
-              placeholder="&#128269; &nbsp;"
+              placeholder="&#128269; &nbsp;search &amp; scroll below"
               value={this.state.term}
               onChange={this.onInputChange}
             />
