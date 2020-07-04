@@ -14,25 +14,29 @@ import { Footer } from './partials/Footer';
 
 const KEY = process.env.REACT_APP_YOUTUBE_API_KEY
 
+const inputFocus = () => {
+  $('input').on({
+    focus: function() {
+      $(this).css({
+        background: '#FFF685',
+        color: 'royalblue'
+      })
+    },
+    blur: function() {
+      $(this).css({
+        background: 'honeydew'
+      })
+    }
+  });
+};
+
 class App extends React.Component {
   state = { videos: [], selectedVideo: null };
 
   componentDidMount() {
     this.onTextSubmit('two fists by modern wolf');
 
-    $('input').on({
-      focus: function() {
-        $(this).css({
-          background: '#FFF685',
-          color: 'royalblue'
-        })
-      },
-      blur: function() {
-        $(this).css({
-          background: 'honeydew'
-        })
-      }
-    });
+    inputFocus();
   }
 
   onTextSubmit = async (term) => {

@@ -1,9 +1,14 @@
-.footer-container {
+.links-container {
+  background: $blueDeep;
   height: 22.25em;
   border-radius: 5px;
 
   .bottom-row-buttons {
     margin-top: 2.5em;
+  }
+
+  h1 {
+    color: $yellowPastel;
   }
 
   a {
