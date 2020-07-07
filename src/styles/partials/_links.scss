@@ -25,4 +25,8 @@
       transform: scale(1.15)
     }
   }
+
+  @media (max-width: 1200px) {
+    height: 25.25em;
+  }
 }
