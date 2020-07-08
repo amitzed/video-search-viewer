@@ -1,4 +1,11 @@
-# Video Shakedown
+# [Video Shakedown](https://video-viewer-az.herokuapp.com) <- Click link to view live on Heroku
+
+<p align="center">
+  <img src="public/images/desktop-view.png" width="650" title="hover text">
+</p>
+<p align="center">
+  <img src="public/images/mobile-view.png" width="300" title="hover text">
+</p>
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
