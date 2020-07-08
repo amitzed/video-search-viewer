@@ -9,4 +9,8 @@
     width: 0;
     background: transparent;
   }
+
+  @media(max-width: 768px) {
+    max-height: 40em;
+  }
 }

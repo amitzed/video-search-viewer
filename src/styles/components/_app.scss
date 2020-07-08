@@ -1,5 +1,33 @@
 .app-container {
+  .app-inner-mobile {
+    display: none;
+  }
+
   @media(max-width: 1024px) {
     margin-top: 6rem !important; // !important used to override Bootstrap margin
+  }
+
+  @media(max-width: 768px) {
+    margin-top: 1rem !important; // !important used to override Bootstrap margin
+  }
+
+  @media(max-width: 768px) {
+    .app-inner {
+      display: none;
+    }
+
+    .app-inner-mobile {
+      display: table;
+      margin-left: 0;
+      margin-right: 0;
+
+      .video-links-container-mobile {
+        display: table-header-group !important;
+      }
+
+      .list-container-mobile {
+        display: table-footer-group !important;
+      }
+    }
   }
 }

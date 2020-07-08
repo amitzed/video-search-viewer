@@ -68,9 +68,19 @@ class App extends React.Component {
             <Search onFormSubmit={this.onTextSubmit} />
             <List onVideoSelect={this.onVideoSelect} videos={this.state.videos} />
           </div>
-          <div className="ten wide column">
+          <div className="ten wide column video-links-container">
             <VideoFocus video={this.state.selectedVideo} />
             <Links />
+          </div>
+        </div>
+        <div className="ui grid app-inner-mobile">
+          <div className="six wide column list-container-mobile">
+            <List onVideoSelect={this.onVideoSelect} videos={this.state.videos} />
+            <Links />
+          </div>
+          <div className="ten wide column video-links-container-mobile">
+            <VideoFocus video={this.state.selectedVideo} />
+            <Search onFormSubmit={this.onTextSubmit} />
           </div>
         </div>
         <Footer />

@@ -88,4 +88,8 @@
       transform: translate3d(4px, 0, 0);
     }
   }
+
+  @media(max-width: 768px) {
+    margin-bottom: 0;
+  }
 }
