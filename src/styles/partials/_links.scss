@@ -29,4 +29,12 @@
   @media (max-width: 1200px) {
     height: 25.25em;
   }
+
+  @media(max-width: 415px) {
+    height: 22.25em;
+
+    .links-icon-container {
+      margin-top: 3rem;
+    }
+  }
 }

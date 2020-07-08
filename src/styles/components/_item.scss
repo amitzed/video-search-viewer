@@ -61,4 +61,16 @@
       width: 30rem;
     }
   }
+
+  @media(max-width: 415px) {
+    img {
+      width: 21rem;
+    }
+  }
+
+  @media(max-width: 320px) {
+    img {
+      width: 18rem;
+    }
+  }
 }

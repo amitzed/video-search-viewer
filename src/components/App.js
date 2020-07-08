@@ -44,7 +44,7 @@ class App extends React.Component {
       params: {
         q: term,
         part: "snippet",
-        maxResults: 5,
+        maxResults: 8,
         type: 'video',
         key: KEY
       }

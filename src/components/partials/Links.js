@@ -10,28 +10,30 @@ export const Links = () => {
             <path fill-rule="evenodd" d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
           </svg>ut</i>
         </h1>
-        <ul className="nav nav-pills nav-justified top-row-buttons">
-          <li className="nav-item">
-            <a className="nav-link active fa fa-vimeo-square fa-3x" href="https://vimeo.com/" target="_blank"></a>
-          </li>
-          <li className="nav-item middle-button">
-            <a className="nav-link active fa fa-reddit-square fa-3x" href="https://www.reddit.com/r/MusicVideos/" target="_blank"></a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link active fa fa-twitch fa-3x" href="https://www.twitch.tv/" target="_blank"></a>
-          </li>
-        </ul>
-        <ul className="nav nav-pills nav-justified bottom-row-buttons">
-          <li className="nav-item">
-            <a className="nav-link active fa fa-spotify fa-3x" href="https://www.spotify.com/us/" target="_blank"></a>
-          </li>
-          <li className="nav-item middle-button">
-            <a className="nav-link active fa fa-soundcloud fa-3x" href="https://soundcloud.com/discover" target="_blank"></a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link active fa fa-bandcamp fa-3x" href="https://bandcamp.com/" target="_blank"></a>
-          </li>
-        </ul>
+        <div className="links-icon-container">
+          <ul className="nav nav-pills nav-justified top-row-buttons">
+            <li className="nav-item">
+              <a className="nav-link active fa fa-vimeo-square fa-3x" href="https://vimeo.com/" target="_blank"></a>
+            </li>
+            <li className="nav-item middle-button">
+              <a className="nav-link active fa fa-reddit-square fa-3x" href="https://www.reddit.com/r/MusicVideos/" target="_blank"></a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link active fa fa-twitch fa-3x" href="https://www.twitch.tv/" target="_blank"></a>
+            </li>
+          </ul>
+          <ul className="nav nav-pills nav-justified bottom-row-buttons">
+            <li className="nav-item">
+              <a className="nav-link active fa fa-spotify fa-3x" href="https://www.spotify.com/us/" target="_blank"></a>
+            </li>
+            <li className="nav-item middle-button">
+              <a className="nav-link active fa fa-soundcloud fa-3x" href="https://soundcloud.com/discover" target="_blank"></a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link active fa fa-bandcamp fa-3x" href="https://bandcamp.com/" target="_blank"></a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   )
