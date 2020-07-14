@@ -1,12 +1,21 @@
-# [Video Shakedown](https://video-viewer-az.herokuapp.com) <- Click link to view live on Heroku
+# Video Shakedown
 
+### To create your own version of this site:
+#### 1. Get a YouTube API key from console.developers.google.com  
+#### 2. At root of project create a .env file  
+#### 3. In that file type: REACT_APP_YOUTUBE_API_KEY=Your API Key
+<br>
+
+<h4 align="center">Desktop View</h4>
 <p align="center">
   <img src="public/images/desktop-view.png" width="650" title="hover text">
 </p>
+<br>
+<h4 align="center">Mobile View</h4>
 <p align="center">
   <img src="public/images/mobile-view.png" width="300" title="hover text">
 </p>
-
+  
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
